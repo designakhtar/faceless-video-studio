@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "google-flow": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        ".tools/google-flow-mcp/src/index.js"
+      ],
+      "env": {}
+    }
+  }
+}

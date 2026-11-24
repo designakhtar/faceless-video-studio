@@ -1,0 +1,14 @@
+# Large installs - recreate with: bash setup.sh
+.venv/
+node_modules/
+.tools/google-flow-mcp/node_modules/
+.tools/flow-chrome-profile/
+.tools/whisper.cpp/
+# Personal Flow config (contains your email once filled in)
+.tools/google-flow-mcp/config/flow.config.json
+# Render caches
+**/renders/
+**/.hyperframes/
+__pycache__/
+*.pyc
+.DS_Store

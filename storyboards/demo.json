@@ -1,0 +1,6 @@
+{"slug":"demo","fps":30,"width":1920,"height":1080,
+ "voiceover":"audio/demo/voiceover.wav","music":"audio/demo/music.wav",
+ "captions":"audio/demo/captions.srt","intro":"graphics/demo/intro.mp4",
+ "shots":[{"id":"s01","duration":2,"clip":"shots/demo/s01.mp4"},
+          {"id":"s02","duration":2,"image":"shots/demo/s02.png"},
+          {"id":"s03","duration":1}]}
