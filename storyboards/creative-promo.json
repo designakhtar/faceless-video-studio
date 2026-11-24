@@ -9,11 +9,11 @@
  "music": "audio/creative-promo/music.wav",
  "music_volume": 0.2,
  "sfx": [],
- "backend": "tbd",
+ "backend": "flow-veo-3.1-lite",
  "shots": [
   {
    "id": "s01",
-   "duration": 8,
+   "duration": 8.6,
    "narration": "আপনার ব্যবসা দারুণ। প্রোডাক্ট ভালো, সার্ভিস ভালো। কিন্তু অনলাইনে কেউ থামছে না, কেউ দেখছে না।",
    "visual": "Dark empty street, shop unnoticed",
    "camera": "Wide establishing shot, slow push-in at eye level.",
@@ -26,7 +26,7 @@
   },
   {
    "id": "s02",
-   "duration": 7,
+   "duration": 7.5,
    "narration": "সমস্যাটা আপনার ব্যবসায় না — সমস্যাটা প্রেজেন্টেশনে। আর ঠিক এখানেই আমি আসি।",
    "visual": "Pixo arrives, waves stylus, shop lights up",
    "camera": "Medium-wide shot, low angle, slow orbit.",
@@ -39,7 +39,7 @@
   },
   {
    "id": "s03",
-   "duration": 6,
+   "duration": 6.4,
    "narration": "আমি আখতার হোসেন — গ্রাফিক ডিজাইনার, ভিডিও এডিটর, আর এআই ভিডিও মেকার।",
    "visual": "GRAPHIC: name card",
    "camera": "HyperFrames",
@@ -52,7 +52,7 @@
   },
   {
    "id": "s04",
-   "duration": 8,
+   "duration": 10.5,
    "narration": "প্রথমত, ডিজাইন। লোগো, ব্র্যান্ডিং, সোশ্যাল মিডিয়া পোস্ট, ইউটিউব থাম্বনেইল — যা দেখলে মানুষ স্ক্রল থামায়।",
    "visual": "Pixo designs: posters snap into a grid",
    "camera": "Medium shot, slow push-in.",
@@ -65,7 +65,7 @@
   },
   {
    "id": "s05",
-   "duration": 8,
+   "duration": 7.9,
    "narration": "দ্বিতীয়ত, ভিডিও। রিলস, ইউটিউব ভিডিও, প্রোডাক্ট অ্যাড,",
    "visual": "Pixo at a giant video timeline",
    "camera": "Over-the-shoulder shot, gentle pan right.",
@@ -78,7 +78,7 @@
   },
   {
    "id": "s06",
-   "duration": 6,
+   "duration": 4.0,
    "narration": "মোশন গ্রাফিক্স আর অ্যানিমেশন — এমন এডিটিং, যা শেষ পর্যন্ত দেখতে ইচ্ছে করে।",
    "visual": "Motion graphics burst out of screen",
    "camera": "Close-up, quick push-in then hold.",
@@ -91,7 +91,7 @@
   },
   {
    "id": "s07",
-   "duration": 8,
+   "duration": 11.0,
    "narration": "তৃতীয়ত, এআই ভিডিও। শুটিং ছাড়া, ক্যামেরা ছাড়া, একটা আইডিয়া থেকে থ্রিডি অ্যানিমেটেড ভিডিও, কম সময়ে, কম খরচে।",
    "visual": "Plain product turns into a cinematic 3D scene",
    "camera": "Medium shot, slow orbit around the table.",
@@ -104,7 +104,7 @@
   },
   {
    "id": "s08",
-   "duration": 6,
+   "duration": 6.9,
    "narration": "মানে, আলাদা আলাদা তিনজন খুঁজতে হবে না। একজনের কাছেই পুরো ক্রিয়েটিভ টিম।",
    "visual": "Three glowing icons merge into one badge",
    "camera": "Medium close-up, static then slight push-in.",
@@ -117,7 +117,7 @@
   },
   {
    "id": "s09",
-   "duration": 8,
+   "duration": 8.0,
    "narration": "দ্রুত ডেলিভারি, আপনার মতো করে রিভিশন, আর এখন কী ট্রেন্ডে চলছে — সেটা মাথায় রেখেই কাজ।",
    "visual": "GRAPHIC: checklist",
    "camera": "HyperFrames",
@@ -130,7 +130,7 @@
   },
   {
    "id": "s10",
-   "duration": 8,
+   "duration": 7.1,
    "narration": "আপনার ব্যবসা, ব্র্যান্ড বা যেকোনো আইডিয়া — যদি হাইপে তুলতে চান, আমি রেডি।",
    "visual": "Shop now crowded and glowing; Pixo waves",
    "camera": "Wide shot, slow pull-back, slightly high angle.",
@@ -143,7 +143,7 @@
   },
   {
    "id": "s11",
-   "duration": 10,
+   "duration": 18.1,
    "narration": "এখনই হোয়াটসঅ্যাপে মেসেজ দিন: +880 1819 831512। আপনার আইডিয়া, আমার ক্রিয়েটিভিটি — চলুন একসাথে ভাইরাল করি।",
    "visual": "GRAPHIC: end card with WhatsApp",
    "camera": "HyperFrames",
@@ -154,5 +154,14 @@
    "status": "pending",
    "credits_used": 0
   }
- ]
+ ],
+ "caption_font": "Hind Siliguri",
+ "caption_size": 20,
+ "credits_per_shot": 10,
+ "voice": {
+  "service": "Higgsfield text2speech_v2 (ElevenLabs)",
+  "voice": "Grady (preset)",
+  "credits": 2.85,
+  "job": "056b2ebc-20ac-47f5-b255-ac991b5a73fe"
+ }
 }

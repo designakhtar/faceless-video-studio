@@ -69,9 +69,12 @@ def main(sb_path):
     for i, s in enumerate(shots):
         d, out = s["duration"], os.path.join(tmp, f"shot{i:03}.mp4")
         if exists(s.get("clip")):
+            # Clip a bit short for its slot? Slow it down (up to 1.4x) before holding the last frame.
+            stretch = min(max(d / max(dur(p(s["clip"])), 0.1), 1.0), 1.4)
             run(["ffmpeg", "-y", "-i", p(s["clip"]), "-vf",
-                 f"{fit},tpad=stop_mode=clone:stop_duration={d}", "-t", str(d), *enc, out])
-            report.append(f"{s['id']}: clip")
+                 f"setpts={stretch:.3f}*PTS,{fit},tpad=stop_mode=clone:stop_duration={d}",
+                 "-t", str(d), *enc, out])
+            report.append(f"{s['id']}: clip" + (f" (slowed {stretch:.2f}x)" if stretch > 1.01 else ""))
         elif exists(s.get("image")):
             frames = int(d * fps)
             run(["ffmpeg", "-y", "-loop", "1", "-i", p(s["image"]), "-vf",
@@ -116,12 +119,19 @@ def main(sb_path):
         vf.append(f"[{last}][{idx}:v]overlay=eof_action=pass[ov{k}]")
         last = f"ov{k}"
     if exists(sb.get("captions")):
-        srt = os.path.join(tmp, "captions.srt")
-        run(["ffmpeg", "-y", "-itsoffset", str(intro_len), "-i", p(sb["captions"]), srt])
-        style = ("FontName=DejaVu Sans,FontSize=22,Bold=1,PrimaryColour=&H00FFFFFF,"
-                 "OutlineColour=&H00000000,BorderStyle=1,Outline=3,Shadow=1,"
-                 "Alignment=2,MarginV=60")
-        vf.append(f"[{last}]subtitles='{srt}':force_style='{style}'[vout]")
+        # Convert to ASS so we can use complex text shaping (needed for Bangla, Hindi, Arabic...).
+        ass = os.path.join(tmp, "captions.ass")
+        run(["ffmpeg", "-y", "-itsoffset", str(intro_len), "-i", p(sb["captions"]), ass])
+        font, size = sb.get("caption_font", "DejaVu Sans"), sb.get("caption_size", 22)
+        lines = open(ass, encoding="utf-8").read().splitlines()
+        for i, ln in enumerate(lines):
+            if ln.startswith("Style: Default,"):
+                # Name,Font,Size,Primary,Secondary,Outline,Back,Bold,Italic,Underline,StrikeOut,
+                # ScaleX,ScaleY,Spacing,Angle,BorderStyle,Outline,Shadow,Alignment,MarginL,MarginR,MarginV,Encoding
+                lines[i] = (f"Style: Default,{font},{size},&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,"
+                            "-1,0,0,0,100,100,0,0,1,3,1,2,20,20,20,1")
+        open(ass, "w", encoding="utf-8").write("\n".join(lines) + "\n")
+        vf.append(f"[{last}]ass='{ass}':shaping=complex[vout]")
         last = "vout"
 
     # Audio: voice (delayed by intro) + looped music ducked under voice + sound effects.

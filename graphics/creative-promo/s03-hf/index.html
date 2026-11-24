@@ -26,9 +26,9 @@ html,body{width:1920px;height:1080px;overflow:hidden;background:radial-gradient(
 .wa{width:92px;height:92px;border-radius:50%;border:10px solid #fff;position:relative;}
 .wa:after{content:"";position:absolute;width:26px;height:26px;background:#fff;border-radius:4px 50% 50% 50%;left:16px;top:16px;}
 </style></head><body>
-<div id="root" data-composition-id="main" data-start="0" data-duration="6" data-width="1920" data-height="1080">
-<div id="glow" class="clip" data-start="0" data-duration="6" data-track-index="0"></div>
-<div id="card" class="clip" data-start="0" data-duration="6" data-track-index="1">
+<div id="root" data-composition-id="main" data-start="0" data-duration="6.4" data-width="1920" data-height="1080">
+<div id="glow" class="clip" data-start="0" data-duration="6.4" data-track-index="0"></div>
+<div id="card" class="clip" data-start="0" data-duration="6.4" data-track-index="1">
 <div class="kicker" id="k">Graphic Designer · Video Editor · AI Video Maker</div>
 <div class="bar" id="b"></div>
 <div class="big" id="t">আখতার হোসেন</div>
@@ -36,11 +36,11 @@ html,body{width:1920px;height:1080px;overflow:hidden;background:radial-gradient(
 </div></div>
 <script>
 const tl=gsap.timeline({paused:true});
-tl.fromTo("#glow",{scale:.8,opacity:.4},{scale:1.15,opacity:1,duration:6,ease:"sine.inOut"},0);
+tl.fromTo("#glow",{scale:.8,opacity:.4},{scale:1.15,opacity:1,duration:6.4,ease:"sine.inOut"},0);
 tl.fromTo("#t",{opacity:0,y:60,scale:.95},{opacity:1,y:0,scale:1,duration:.9,ease:"power4.out"},.2);
 tl.fromTo("#s",{opacity:0,y:24},{opacity:1,y:0,duration:.8,ease:"power3.out"},.6);
 tl.to("#b",{width:520,duration:.8,ease:"power2.inOut"},.9);
 tl.fromTo("#k",{opacity:0,y:-20},{opacity:1,y:0,duration:.7,ease:"power3.out"},1.2);
-tl.to("#card",{opacity:0,duration:.4,ease:"power1.in"},6-0.45);
+tl.to("#card",{opacity:0,duration:.4,ease:"power1.in"},6.4-0.45);
 window.__timelines["main"]=tl; tl.seek(0);
 </script></body></html>
