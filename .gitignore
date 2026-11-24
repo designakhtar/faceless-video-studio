@@ -12,3 +12,6 @@ node_modules/
 __pycache__/
 *.pyc
 .DS_Store
+
+# Local backup archives (duplicate of the repo)
+final/*-backup.zip
