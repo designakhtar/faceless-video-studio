@@ -1,7 +1,7 @@
 # Character & Style Sheet — template
 
-Copy to `characters/style-sheet.md` and fill in. The two blocks in CAPITALS are pasted
-word-for-word into every Veo prompt. Keep each block under ~70 words — long blocks dilute the shot action.
+Copy to `characters/style-sheet.md` and fill in. The three VEO blocks are
+built into every Veo prompt by `studio.py prompts`; the other blocks are notes for people. Keep each block under ~70 words — long blocks dilute the shot action.
 
 ## Hero
 - Name: Pip
@@ -29,3 +29,12 @@ realistic humans, photoreal style, distorted hands, flicker, sudden style change
 Notes
 - Invent an ORIGINAL character. Do not imitate a specific studio's existing characters.
 - "Pixar-like" is described by qualities (stylized 3D, soft lighting, appealing shapes), not by naming characters or films.
+
+## VEO CHARACTER BLOCK
+(The hero with no name, hex codes or sizes. Say what is in which hand. Under 60 words.)
+
+## VEO STYLE BLOCK
+(Look, light and palette in plain colour words. Under 50 words.)
+
+## VEO AVOID
+Avoid: any text, letters, numbers, signs with writing, captions, logos, watermarks, realistic humans, distorted hands, flicker, sudden style changes.
