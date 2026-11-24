@@ -18,13 +18,13 @@ labelled placeholder (so a missing shot never breaks the build). Shots shorter t
 their slot hold the last frame; longer ones are trimmed.
 Output: final/<slug>.mp4 (H.264 + AAC, loudness -14 LUFS for YouTube).
 """
-import json, os, subprocess, sys, tempfile
+import json, os, shutil, subprocess, sys, tempfile
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
-def run(cmd):
-    r = subprocess.run(cmd, capture_output=True, text=True)
+def run(cmd, cwd=None):
+    r = subprocess.run(cmd, capture_output=True, text=True, encoding="utf-8", errors="replace", cwd=cwd)
     if r.returncode != 0:
         sys.exit(f"FFmpeg failed:\n{' '.join(cmd)}\n{r.stderr[-2000:]}")
 
@@ -44,7 +44,7 @@ def exists(rel):
 
 
 def main(sb_path):
-    sb = json.load(open(p(sb_path)))
+    sb = json.load(open(p(sb_path), encoding="utf-8"))
     slug, fps = sb["slug"], sb.get("fps", 30)
     W, H = sb.get("width", 1920), sb.get("height", 1080)
     enc = ["-c:v", "libx264", "-preset", "medium", "-crf", "18", "-pix_fmt", "yuv420p",
@@ -52,6 +52,8 @@ def main(sb_path):
     fit = (f"scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},"
            f"setsar=1,fps={fps}")
     tmp = tempfile.mkdtemp(prefix=f"assemble-{slug}-")
+    # Bundled fonts are used directly, so they need not be installed.
+    shutil.copytree(p("assets/fonts"), os.path.join(tmp, "fonts"))
     voice = p(sb["voiceover"])
     voice_len = dur(voice)
 
@@ -85,9 +87,14 @@ def main(sb_path):
             report.append(f"{s['id']}: image (Ken Burns)")
         else:
             label = f"MISSING SHOT {s['id']}".replace(":", "")
+            arial = "C:/Windows/Fonts/arial.ttf"  # Windows FFmpeg has no default font
+            font = ""
+            if os.name == "nt" and os.path.exists(arial):
+                shutil.copy(arial, os.path.join(tmp, "label.ttf"))
+                font = "fontfile=label.ttf:"
             run(["ffmpeg", "-y", "-f", "lavfi", "-i", f"color=c=0x1b1f3a:s={W}x{H}:r={fps}",
-                 "-vf", f"drawtext=text='{label}':fontcolor=white:fontsize=64:"
-                 "x=(w-tw)/2:y=(h-th)/2", "-t", str(d), *enc, out])
+                 "-vf", f"drawtext={font}text='{label}':fontcolor=white:fontsize=64:"
+                 "x=(w-tw)/2:y=(h-th)/2", "-t", str(d), *enc, out], cwd=tmp)
             report.append(f"{s['id']}: PLACEHOLDER (no clip or image found)")
         parts.append(out)
 
@@ -104,7 +111,7 @@ def main(sb_path):
         run(["ffmpeg", "-y", "-i", f, "-vf", fit, *enc, out])
         norm.append(out)
     lst = os.path.join(tmp, "list.txt")
-    open(lst, "w").write("".join(f"file '{f}'\n" for f in norm))
+    open(lst, "w", encoding="utf-8").write("".join(f"file '{f}'\n" for f in norm))
     body = os.path.join(tmp, "body.mp4")
     run(["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", lst, "-c", "copy", body])
     video_len = dur(body)
@@ -131,7 +138,8 @@ def main(sb_path):
                 lines[i] = (f"Style: Default,{font},{size},&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,"
                             "-1,0,0,0,100,100,0,0,1,3,1,2,20,20,20,1")
         open(ass, "w", encoding="utf-8").write("\n".join(lines) + "\n")
-        vf.append(f"[{last}]ass='{ass}':shaping=complex[vout]")
+        # Bare names + cwd=tmp: a Windows drive colon would break the filter string.
+        vf.append(f"[{last}]ass=captions.ass:fontsdir=fonts:shaping=complex[vout]")
         last = "vout"
 
     # Audio: voice (delayed by intro) + looped music ducked under voice + sound effects.
@@ -168,7 +176,7 @@ def main(sb_path):
     run(["ffmpeg", "-y", *inputs, "-filter_complex", ";".join(vf + af),
          "-map", f"[{last}]" if vf else "0:v", "-map", "[aout]",
          "-c:v", "libx264", "-preset", "medium", "-crf", "18", "-pix_fmt", "yuv420p",
-         "-c:a", "aac", "-b:a", "192k", "-t", str(video_len), "-movflags", "+faststart", final])
+         "-c:a", "aac", "-b:a", "192k", "-t", str(video_len), "-movflags", "+faststart", final], cwd=tmp)
 
     print("\n".join(report))
     print(f"FINAL: {final}  ({dur(final):.1f}s, {os.path.getsize(final)/1e6:.1f} MB)")

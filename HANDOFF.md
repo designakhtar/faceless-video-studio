@@ -14,7 +14,11 @@ Talk to the user in simple Bangla. Follow `.claude/skills/faceless-video/SKILL.m
 - Music (free, MusicGen): `audio/creative-promo/music.wav`
 - Timing preview with placeholders: `final/creative-promo-PREVIEW.mp4`
 
-## Remaining
+## Status 2026-11-24
+Steps 1-5 were completed on the Windows PC; see `final/creative-promo-report.md`. Shots were made with
+Claude in Chrome, not the google-flow MCP. Do NOT regenerate without asking. Only the open item below remains.
+
+## Remaining (original list, done)
 1. Setup on Windows (one time):
    - Need: Node.js 18+, Python 3.10+, FFmpeg (`winget install Gyan.FFmpeg`), Google Chrome.
    - `npm install` in the studio root and in `.tools/google-flow-mcp`
