@@ -3,13 +3,15 @@
 - Video: `final/creative-promo.mp4`, 96.0 s, 1920x1080, 30 fps, H.264/AAC, 55 MB
 - 11 shots: 8 Veo clips (generated at 720p, scaled up) + 3 graphic cards. No placeholders.
 - Slowed clips: s01 1.08x, s04 1.32x, s07 1.39x
-- Loudness: measured -15.1 LUFS (target -14), true peak -1.3 dBTP
+- Phone line replaced at 1:18 with English digits; end card now shows +88 01819 831512.
+- Loudness (first build): measured -15.1 LUFS (target -14), true peak -1.3 dBTP
 
 ## Credits
 | Item | Cost |
 |---|---|
 | Flow Veo 3.1 Lite, 8 clips x 10 | 80 Flow credits (Flow's displayed price). s02 confirmed by balance 570 -> 560; final balance not read |
 | Voiceover (Higgsfield, earlier) | 2.85 credits |
+| Phone line retakes (Higgsfield): Bangla digits 0.30 (unused), English digits 0.45 (used) | 0.75 credits |
 | Music, captions, cards, assembly | free (local) |
 
 ## How the shots were made
@@ -27,5 +29,5 @@ were NOT used because they hide browser automation from Google.
 - Cause: hex codes and the name/size in the prompts were sometimes drawn as text. Remove them before any retry.
 
 ## Not checked
-- Audio was not listened to. The user must check the phone number (+880 1819 831512) at about 1:20.
+- The user approved the new phone line by ear (`audio/creative-promo/phone-line-en.mp3`). The spliced final mix was not listened to.
 - QA used frames, not full playback.

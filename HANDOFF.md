@@ -16,7 +16,7 @@ Talk to the user in simple Bangla. Follow `.claude/skills/faceless-video/SKILL.m
 
 ## Status 2026-11-24
 Steps 1-5 were completed on the Windows PC; see `final/creative-promo-report.md`. Shots were made with
-Claude in Chrome, not the google-flow MCP. Do NOT regenerate without asking. Only the open item below remains.
+Claude in Chrome, not the google-flow MCP. Do NOT regenerate without asking. The phone line was re-recorded and spliced in.
 
 ## Remaining (original list, done)
 1. Setup on Windows (one time):
@@ -40,6 +40,6 @@ Claude in Chrome, not the google-flow MCP. Do NOT regenerate without asking. Onl
    Short clips are slowed up to 1.4x automatically (s04 and s07 have ~10.5–11 s slots).
 5. QA 4 frames, write `final/creative-promo-report.md`, commit and push.
 
-## Open item
+## Open item (done)
 Ask the user to listen at 1:20 of the preview: the phone number (+880 1819 831512) may be mis-read by the AI voice.
 If wrong, regenerate only that line (quote the Higgsfield cost first) and splice it in.
