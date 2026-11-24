@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="bn"><head><meta charset="UTF-8" />
+<meta name="viewport" content="width=1920, height=1080" />
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+<style>
+@font-face{font-family:"Hind Siliguri";font-weight:400;src:url(fonts/hs-bn-400.woff2) format("woff2");unicode-range:U+0951-0952,U+0964-0965,U+0980-09FE,U+200C-200D,U+25CC;}
+@font-face{font-family:"Hind Siliguri";font-weight:700;src:url(fonts/hs-bn-700.woff2) format("woff2");unicode-range:U+0951-0952,U+0964-0965,U+0980-09FE,U+200C-200D,U+25CC;}
+@font-face{font-family:"Hind Siliguri";font-weight:400;src:url(fonts/hs-lat-400.woff2) format("woff2");}
+@font-face{font-family:"Hind Siliguri";font-weight:700;src:url(fonts/hs-lat-700.woff2) format("woff2");}
+:root{--bg-a:#141833;--bg-b:#3A2C6B;--accent:#FF8A3D;--cyan:#4FD1FF;--ink:#fff;}
+*{margin:0;padding:0;box-sizing:border-box;}
+html,body{width:1920px;height:1080px;overflow:hidden;background:radial-gradient(ellipse at 30% 25%,var(--bg-b),var(--bg-a) 70%);}
+#root{width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-family:"Hind Siliguri",sans-serif;}
+#card{position:absolute;inset:0;}
+#card{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;}
+#glow{position:absolute;width:900px;height:900px;border-radius:50%;left:510px;top:90px;
+ background:radial-gradient(circle,rgba(79,209,255,.18),transparent 65%);}
+.kicker{color:var(--accent);font-size:38px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;}
+.big{color:var(--ink);font-size:150px;font-weight:700;line-height:1.15;text-shadow:0 12px 40px rgba(0,0,0,.45);}
+.sub{color:var(--cyan);font-size:56px;font-weight:700;letter-spacing:.04em;}
+.bar{width:0;height:10px;border-radius:5px;background:var(--accent);margin:34px 0;}
+.row{display:flex;align-items:center;gap:36px;color:var(--ink);font-size:84px;font-weight:700;margin:18px 0;}
+.tick{width:96px;height:96px;border-radius:50%;background:var(--accent);display:flex;align-items:center;justify-content:center;}
+.tick:after{content:"";width:22px;height:44px;border:solid #fff;border-width:0 12px 12px 0;transform:rotate(45deg) translate(-4px,-6px);}
+.pill{display:flex;align-items:center;gap:28px;background:#25D366;color:#fff;border-radius:999px;padding:26px 64px;font-size:92px;font-weight:700;margin:30px 0 24px;box-shadow:0 20px 60px rgba(37,211,102,.35);}
+.wa{width:92px;height:92px;border-radius:50%;border:10px solid #fff;position:relative;}
+.wa:after{content:"";position:absolute;width:26px;height:26px;background:#fff;border-radius:4px 50% 50% 50%;left:16px;top:16px;}
+</style></head><body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="8" data-width="1920" data-height="1080">
+<div id="glow" class="clip" data-start="0" data-duration="8" data-track-index="0"></div>
+<div id="card" class="clip" data-start="0" data-duration="8" data-track-index="1">
+<div class="row" id="r1"><div class="tick"></div>দ্রুত ডেলিভারি</div>
+<div class="row" id="r2"><div class="tick"></div>আপনার মতো রিভিশন</div>
+<div class="row" id="r3"><div class="tick"></div>ট্রেন্ড-রেডি কাজ</div>
+</div></div>
+<script>
+const tl=gsap.timeline({paused:true});
+tl.fromTo("#glow",{scale:.8,opacity:.4},{scale:1.15,opacity:1,duration:8,ease:"sine.inOut"},0);
+["#r1","#r2","#r3"].forEach((r,i)=>{tl.fromTo(r,{opacity:0,x:-80},{opacity:1,x:0,duration:.6,ease:"back.out(1.6)"},.4+i*1.6);
+tl.fromTo(r+" .tick",{scale:0},{scale:1,duration:.45,ease:"back.out(2.5)"},.6+i*1.6);});
+tl.to("#card",{opacity:0,duration:.4,ease:"power1.in"},8-0.45);
+window.__timelines["main"]=tl; tl.seek(0);
+</script></body></html>

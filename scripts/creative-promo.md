@@ -1,3 +1,5 @@
+**Status:** APPROVED by user (2026-11-24)
+
 # Creative Promo — "আপনার ব্র্যান্ডকে হাইপে তুলুন"
 
 **Brief**
@@ -16,8 +18,8 @@
 [00:08] (VISUAL: lights switch on, the shop glows with colourful signs, people start gathering)
 সমস্যাটা আপনার ব্যবসায় না — সমস্যাটা প্রেজেন্টেশনে। আর ঠিক এখানেই আমি আসি।
 
-[00:15] (VISUAL: title card — [আপনার নাম] · Graphic Designer · Video Editor · AI Video Maker)
-আমি [আপনার নাম] — গ্রাফিক ডিজাইনার, ভিডিও এডিটর, আর এআই ভিডিও মেকার।
+[00:15] (VISUAL: title card — Akhtar Hossain · Graphic Designer · Video Editor · AI Video Maker)
+আমি আখতার হোসেন — গ্রাফিক ডিজাইনার, ভিডিও এডিটর, আর এআই ভিডিও মেকার।
 
 [00:21] (VISUAL: logos, posters, social posts and thumbnails fly in and snap into a clean grid)
 প্রথমত, ডিজাইন। লোগো, ব্র্যান্ডিং, সোশ্যাল মিডিয়া পোস্ট, ইউটিউব থাম্বনেইল — যা দেখলে মানুষ স্ক্রল থামায়।
@@ -38,5 +40,5 @@
 আপনার ব্যবসা, ব্র্যান্ড বা যেকোনো আইডিয়া — যদি হাইপে তুলতে চান, আমি রেডি।
 
 [01:16] (VISUAL: end card with contact details, big and clear)
-এখনই মেসেজ দিন — হোয়াটসঅ্যাপ: [নম্বর], ফেসবুক পেজ: [পেজের নাম], ইমেইল: [ইমেইল]।
+এখনই হোয়াটসঅ্যাপে মেসেজ দিন: +880 1819 831512।
 আপনার আইডিয়া, আমার ক্রিয়েটিভিটি — চলুন একসাথে ভাইরাল করি।
