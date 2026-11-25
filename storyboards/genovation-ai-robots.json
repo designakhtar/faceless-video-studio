@@ -85,7 +85,7 @@
    "id": "s06",
    "type": "veo",
    "duration": 7.927,
-   "narration": "Our AI agents answer your phone at eleven P M, qualify the caller, book them, and remind them, before you even wake up.",
+   "narration": "Our AI agents answer your phone at 11 PM, qualify the caller, book them, and remind them, before you even wake up.",
    "visual": "Gena answers the night call, books it",
    "camera": "Medium shot, slow orbit to the right.",
    "hero": true,
@@ -95,7 +95,8 @@
    "veo_prompt": "Medium shot, slow orbit to the right. A realistic human-like female humanoid robot with a lifelike face, calm eyes with a faint blue glow, smooth pearl skin with fine seams at the jaw and temples, a sleek hairless sculpted head, and a slim pearl-white and graphite body with thin blue light lines at the joints. Natural human expressions. Plain unmarked body. She stands behind the counter beside the ringing desk phone, lifts the receiver, speaks warmly with a nod and puts it down; a soft blue holographic square of abstract shapes lights up beside her. A small-town corner shop at night, lights off, large front window, shelves of goods in shadow, a desk phone on the wooden counter, cool blue moonlight through the window. Photoreal cinematic film look, dark navy tones with cool blue accent light and warm practical lights, shallow depth of field, gentle film grain, smooth camera motion, cinematic 16:9. Ambient: phone pickup click, quiet night room tone. No dialogue, no music. Avoid: any text, letters, numbers, readable screens, logos, watermarks, cartoon style, exposed wires, uncanny faces, distorted hands, extra fingers, flicker.",
    "clip": "shots/genovation-ai-robots/s06.mp4",
    "status": "pending",
-   "credits_used": 0
+   "credits_used": 0,
+   "voice_text": "Our AI agents answer your phone at eleven P M, qualify the caller, book them, and remind them, before you even wake up."
   },
   {
    "id": "s07",

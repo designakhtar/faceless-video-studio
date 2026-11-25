@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8" />
+<meta name="viewport" content="width=1920, height=1080" />
+<script src="gsap.min.js"></script>
+<style>
+@font-face{font-family:"Hind Siliguri";font-weight:400;src:url(fonts/hs-lat-400.woff2) format("woff2");}
+@font-face{font-family:"Hind Siliguri";font-weight:700;src:url(fonts/hs-lat-700.woff2) format("woff2");}
+:root{--bg-a:#050814;--bg-b:#0E1A3A;--accent:#2F6BFF;--hi:#7FB2FF;--ink:#fff;--mute:#AAB6D3;}
+*{margin:0;padding:0;box-sizing:border-box;}
+html,body{width:1920px;height:1080px;overflow:hidden;background:radial-gradient(ellipse at 50% 35%,var(--bg-b),var(--bg-a) 72%);}
+#root{width:100%;height:100%;font-family:"Hind Siliguri",sans-serif;color:var(--ink);}
+#card{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;}
+#glow{position:absolute;width:1100px;height:1100px;border-radius:50%;left:410px;top:-10px;background:radial-gradient(circle,rgba(47,107,255,.22),transparent 62%);}
+#streak{position:absolute;left:-600px;top:540px;width:600px;height:4px;background:linear-gradient(90deg,transparent,var(--hi),transparent);}
+.serif{font-family:"Liberation Serif","DejaVu Serif",serif;font-style:italic;font-weight:400;letter-spacing:-.01em;}
+.kicker{color:var(--hi);font-size:30px;font-weight:700;letter-spacing:.3em;text-transform:uppercase;}
+.big{font-size:130px;line-height:1.02;}
+.sub{color:var(--mute);font-size:40px;}
+.btn{display:inline-block;background:var(--accent);color:#fff;border-radius:999px;padding:22px 56px;font-size:46px;font-weight:700;box-shadow:0 18px 60px rgba(47,107,255,.45);}
+.tag{display:inline-block;border:2px solid rgba(127,178,255,.5);border-radius:999px;padding:10px 30px;font-size:28px;color:var(--hi);}
+</style></head><body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="4.490" data-width="1920" data-height="1080">
+<div id="glow" class="clip" data-start="0" data-duration="4.490" data-track-index="0"></div>
+<div id="streak" class="clip" data-start="0" data-duration="4.490" data-track-index="1"></div>
+<div id="card" class="clip" data-start="0" data-duration="4.490" data-track-index="2">
+<div class="tag" id="a">Example</div>
+<div style="display:flex;gap:56px;align-items:center;margin:48px 0 20px;font-size:64px;font-weight:700" id="b">
+<div><div style="font-size:96px">8</div><div class="sub" style="font-size:30px">missed calls / week</div></div>
+<div style="color:var(--hi)">×</div>
+<div><div style="font-size:96px">1 in 4</div><div class="sub" style="font-size:30px">would have bought</div></div>
+<div style="color:var(--hi)">×</div>
+<div><div style="font-size:96px">$800</div><div class="sub" style="font-size:30px">per customer</div></div>
+</div>
+<div class="serif big" id="c" style="font-size:190px;margin-top:20px">$83,200</div>
+<div class="sub" id="d">a year, on missed calls alone</div>
+</div></div>
+<script>
+const D=4.490;
+const tl=gsap.timeline({paused:true});
+tl.fromTo("#glow",{scale:.85,opacity:.5},{scale:1.12,opacity:1,duration:D,ease:"sine.inOut"},0);
+tl.fromTo("#streak",{x:0},{x:3200,duration:1.1,ease:"power2.inOut"},0);
+tl.fromTo("#a",{opacity:0},{opacity:1,duration:.4},.1);
+tl.fromTo("#b",{opacity:0,y:30},{opacity:1,y:0,duration:.6,ease:"power3.out"},.3);
+tl.fromTo("#c",{opacity:0,scale:.7},{opacity:1,scale:1,duration:.7,ease:"back.out(1.6)"},1.2);
+tl.fromTo("#d",{opacity:0},{opacity:1,duration:.5},1.7);
+tl.to("#card",{opacity:0,duration:.35,ease:"power1.in"},D-0.4);
+window.__timelines["main"]=tl; tl.seek(0);
+</script></body></html>

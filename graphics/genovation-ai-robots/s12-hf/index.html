@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8" />
+<meta name="viewport" content="width=1920, height=1080" />
+<script src="gsap.min.js"></script>
+<style>
+@font-face{font-family:"Hind Siliguri";font-weight:400;src:url(fonts/hs-lat-400.woff2) format("woff2");}
+@font-face{font-family:"Hind Siliguri";font-weight:700;src:url(fonts/hs-lat-700.woff2) format("woff2");}
+:root{--bg-a:#050814;--bg-b:#0E1A3A;--accent:#2F6BFF;--hi:#7FB2FF;--ink:#fff;--mute:#AAB6D3;}
+*{margin:0;padding:0;box-sizing:border-box;}
+html,body{width:1920px;height:1080px;overflow:hidden;background:radial-gradient(ellipse at 50% 35%,var(--bg-b),var(--bg-a) 72%);}
+#root{width:100%;height:100%;font-family:"Hind Siliguri",sans-serif;color:var(--ink);}
+#card{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;}
+#glow{position:absolute;width:1100px;height:1100px;border-radius:50%;left:410px;top:-10px;background:radial-gradient(circle,rgba(47,107,255,.22),transparent 62%);}
+#streak{position:absolute;left:-600px;top:540px;width:600px;height:4px;background:linear-gradient(90deg,transparent,var(--hi),transparent);}
+.serif{font-family:"Liberation Serif","DejaVu Serif",serif;font-style:italic;font-weight:400;letter-spacing:-.01em;}
+.kicker{color:var(--hi);font-size:30px;font-weight:700;letter-spacing:.3em;text-transform:uppercase;}
+.big{font-size:130px;line-height:1.02;}
+.sub{color:var(--mute);font-size:40px;}
+.btn{display:inline-block;background:var(--accent);color:#fff;border-radius:999px;padding:22px 56px;font-size:46px;font-weight:700;box-shadow:0 18px 60px rgba(47,107,255,.45);}
+.tag{display:inline-block;border:2px solid rgba(127,178,255,.5);border-radius:999px;padding:10px 30px;font-size:28px;color:var(--hi);}
+</style></head><body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="9.756" data-width="1920" data-height="1080">
+<div id="glow" class="clip" data-start="0" data-duration="9.756" data-track-index="0"></div>
+<div id="streak" class="clip" data-start="0" data-duration="9.756" data-track-index="1"></div>
+<div id="card" class="clip" data-start="0" data-duration="9.756" data-track-index="2">
+<div class="kicker" id="h">How we work</div>
+<div class="serif" id="t" style="font-size:96px;margin:24px 0 70px">Thirty days from the first call to live</div>
+<div style="display:flex;gap:36px">
+<div class="wk" id="w1" style="width:390px;text-align:left;border:2px solid rgba(127,178,255,.35);border-radius:22px;padding:36px;background:rgba(14,26,58,.6)">
+<div class="kicker" style="font-size:24px">Week 1</div><div class="serif" style="font-size:50px;margin-top:16px">We Learn Your Business</div></div><div class="wk" id="w2" style="width:390px;text-align:left;border:2px solid rgba(127,178,255,.35);border-radius:22px;padding:36px;background:rgba(14,26,58,.6)">
+<div class="kicker" style="font-size:24px">Week 2</div><div class="serif" style="font-size:50px;margin-top:16px">We Build It</div></div><div class="wk" id="w3" style="width:390px;text-align:left;border:2px solid rgba(127,178,255,.35);border-radius:22px;padding:36px;background:rgba(14,26,58,.6)">
+<div class="kicker" style="font-size:24px">Week 3</div><div class="serif" style="font-size:50px;margin-top:16px">We Connect &amp; Test</div></div><div class="wk" id="w4" style="width:390px;text-align:left;border:2px solid rgba(127,178,255,.35);border-radius:22px;padding:36px;background:rgba(14,26,58,.6)">
+<div class="kicker" style="font-size:24px">Week 4</div><div class="serif" style="font-size:50px;margin-top:16px">We Go Live</div></div>
+</div>
+</div></div>
+<script>
+const D=9.756;
+const tl=gsap.timeline({paused:true});
+tl.fromTo("#glow",{scale:.85,opacity:.5},{scale:1.12,opacity:1,duration:D,ease:"sine.inOut"},0);
+tl.fromTo("#streak",{x:0},{x:3200,duration:1.1,ease:"power2.inOut"},0);
+tl.fromTo("#h",{opacity:0},{opacity:1,duration:.4},.1);
+tl.fromTo("#t",{opacity:0,y:30},{opacity:1,y:0,duration:.7,ease:"power3.out"},.3);
+[1,2,3,4].forEach((i,k)=>tl.fromTo("#w"+i,{opacity:0,y:50},{opacity:1,y:0,duration:.6,ease:"power3.out"},1.0+k*2.1));
+tl.to("#card",{opacity:0,duration:.35,ease:"power1.in"},D-0.4);
+window.__timelines["main"]=tl; tl.seek(0);
+</script></body></html>
