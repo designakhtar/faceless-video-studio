@@ -37,11 +37,14 @@
 | s14 | 01:34 | veo | Gena holds up a glowing shield emblem; light pulses outward. | And our guarantee: not live in thirty days? You don't pay for the build. |
 | s15 | 01:41 | veo | The camera rises from the shop to the whole small town at dawn, many windows glowing blue as phones get answered. | Plug the holes first. Then fill the bucket. |
 | s16 | 01:46 | veo | Gena looks straight into the camera and offers her hand toward the viewer. | So, what is the leak costing you? |
-| s17 | 01:50 | graphic | End card: Book your free Leak Audit · 30 minutes, no obligation · +1 289-700-3394 · genovation.ai | Book your free thirty-minute Leak Audit. Call plus one, two eight nine, seven zero zero, three three nine four, or visit genovation dot A I. |
+| s17 | 01:50 | graphic | End card: Book your free Leak Audit · 30 minutes, no obligation · +1 289-700-3394 · contact@genovation.ai · 4-1400 Grahams Lane, Burlington, ON L7S 1W3 · genovation.ai | Book your free thirty-minute Leak Audit. Call plus one, two eight nine, seven zero zero, three three nine four, or visit genovation dot A I. |
 
 **Total:** 17 shots (13 Veo + 4 free graphic cards) · ~2:00
 
-**Spoken vs on-screen (confirm)**
-- Phone spoken: "plus one, two eight nine, seven zero zero, three three nine four" · on screen: +1 289-700-3394
+**Spoken vs on-screen**
+- Phone CONFIRMED by user: +1 289-700-3394 · spoken "plus one, two eight nine, seven zero zero, three three nine four"
+- Email (on screen only): contact@genovation.ai
+- Address (on screen only): 4-1400 Grahams Lane, Burlington, ON L7S 1W3
+- User rule: NO paid apps or credits for this video
 - Website spoken: "genovation dot A I" · on screen: genovation.ai
 - $83,200 is the website's own example (8 calls/week, 1 in 4 buy, $800 customer) — shown as "Example"
