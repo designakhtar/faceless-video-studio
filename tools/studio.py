@@ -79,11 +79,17 @@ def cmd_new(slug):
     print(f"Created storyboards/{slug}.json and folders")
 
 
-def block(name):
-    text = (ROOT / "characters/style-sheet.md").read_text(encoding="utf-8")
+def sheet_path(slug=None):
+    """A video can have its own sheet at characters/<slug>.md; otherwise the channel sheet."""
+    own = ROOT / "characters" / f"{slug}.md"
+    return own if slug and own.exists() else ROOT / "characters/style-sheet.md"
+
+
+def block(name, slug=None):
+    text = sheet_path(slug).read_text(encoding="utf-8")
     m = re.search(rf"^## {re.escape(name)}\s*\n(.+?)(?=^## |\Z)", text, re.S | re.M)
     if not m:
-        sys.exit(f"'## {name}' is missing from characters/style-sheet.md")
+        sys.exit(f"'## {name}' is missing from {sheet_path(slug).name}")
     return " ".join(m.group(1).split())
 
 
@@ -105,10 +111,10 @@ def lint(prompt, hero_name):
 
 def cmd_prompts(slug):
     sb = load(slug)
-    sheet = (ROOT / "characters/style-sheet.md").read_text(encoding="utf-8")
+    sheet = sheet_path(slug).read_text(encoding="utf-8")
     m = re.search(r"^- Name:\s*(\S+)", sheet, re.M)
     hero_name = m.group(1) if m else ""
-    hero, style, avoid = block("VEO CHARACTER BLOCK"), block("VEO STYLE BLOCK"), block("VEO AVOID")
+    hero, style, avoid = block("VEO CHARACTER BLOCK", slug), block("VEO STYLE BLOCK", slug), block("VEO AVOID", slug)
     problems, out = 0, [f"# Veo prompts: {slug}", ""]
     for s in sb["shots"]:
         if s.get("type") != "veo":
