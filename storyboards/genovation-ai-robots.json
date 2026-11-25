@@ -16,7 +16,7 @@
   {
    "id": "s01",
    "type": "veo",
-   "duration": 8,
+   "duration": 6.569,
    "narration": "It's eleven at night. A customer is calling your business. And nobody picks up.",
    "visual": "Shop at night, phone rings, nobody answers",
    "camera": "Wide shot, very slow push-in toward the counter at eye level.",
@@ -32,7 +32,7 @@
   {
    "id": "s02",
    "type": "veo",
-   "duration": 8,
+   "duration": 8.166,
    "narration": "Missed calls. Leads nobody rang back. Quotes nobody chased. Your business is leaking money.",
    "visual": "Coins leak from a cracked bucket",
    "camera": "Close-up, slow downward tilt.",
@@ -48,7 +48,7 @@
   {
    "id": "s03",
    "type": "graphic",
-   "duration": 5,
+   "duration": 4.49,
    "narration": "Just eight missed calls a week can add up to over eighty thousand dollars a year.",
    "visual": "Example card: 8 calls x 1 in 4 x $800 = $83,200 a year",
    "clip": "graphics/genovation-ai-robots/s03.mp4",
@@ -58,7 +58,7 @@
   {
    "id": "s04",
    "type": "veo",
-   "duration": 8,
+   "duration": 5.164,
    "narration": "Genovation AI finds exactly where the leaks are, and then we plug them.",
    "visual": "Gena wakes up in the glass studio",
    "camera": "Medium close-up, slow push-in on her face.",
@@ -74,8 +74,8 @@
   {
    "id": "s05",
    "type": "graphic",
-   "duration": 5,
-   "narration": "",
+   "duration": 5.78,
+   "narration": "Genovation AI. Your business is leaking money. We plug it.",
    "visual": "Title: Genovation AI - Your Business Is Leaking Money. We Plug It.",
    "clip": "graphics/genovation-ai-robots/s05.mp4",
    "status": "pending",
@@ -84,7 +84,7 @@
   {
    "id": "s06",
    "type": "veo",
-   "duration": 8,
+   "duration": 7.927,
    "narration": "Our AI agents answer your phone at eleven P M, qualify the caller, book them, and remind them, before you even wake up.",
    "visual": "Gena answers the night call, books it",
    "camera": "Medium shot, slow orbit to the right.",
@@ -100,8 +100,8 @@
   {
    "id": "s07",
    "type": "veo",
-   "duration": 8,
-   "narration": "Meet your new team. Reception. Sales. Operations. Marketing. Finance. Five AI agents, working together.",
+   "duration": 8.815,
+   "narration": "Meet your new team: reception, sales, operations, marketing and finance. Five AI agents, working together.",
    "visual": "Gena walks past four more robots who start working",
    "camera": "Tracking shot following her from the side.",
    "hero": true,
@@ -116,7 +116,7 @@
   {
    "id": "s08",
    "type": "veo",
-   "duration": 8,
+   "duration": 8.49,
    "narration": "All inside one dashboard. One login, one bill, and shared memory, so nothing ever gets repeated back to your customer.",
    "visual": "Screens merge into one big dashboard",
    "camera": "Wide shot, slow crane up.",
@@ -132,7 +132,7 @@
   {
    "id": "s09",
    "type": "veo",
-   "duration": 8,
+   "duration": 6.424,
    "narration": "We build custom software and websites that are yours forever. No per-seat fees, ever.",
    "visual": "Robot builds website screens in the air",
    "camera": "Medium shot, slow push-in.",
@@ -148,7 +148,7 @@
   {
    "id": "s10",
    "type": "veo",
-   "duration": 8,
+   "duration": 5.825,
    "narration": "When a customer asks ChatGPT for the best company in town, we make sure it says your name.",
    "visual": "A shop customer's phone search points to the shop",
    "camera": "Over-the-shoulder close-up.",
@@ -164,7 +164,7 @@
   {
    "id": "s11",
    "type": "veo",
-   "duration": 8,
+   "duration": 6.075,
    "narration": "And video content that sells for you before you get on the call. You never have to be on camera.",
    "visual": "Robot director plays a hologram film strip",
    "camera": "Medium close-up, slow orbit left.",
@@ -180,7 +180,7 @@
   {
    "id": "s12",
    "type": "graphic",
-   "duration": 5,
+   "duration": 9.756,
    "narration": "Week one, we learn your business. Week two, we build it. Week three, we connect and test. Week four, you go live.",
    "visual": "Timeline: Week 1-4",
    "clip": "graphics/genovation-ai-robots/s12.mp4",
@@ -190,7 +190,7 @@
   {
    "id": "s13",
    "type": "veo",
-   "duration": 8,
+   "duration": 4.467,
    "narration": "Thirty days from the first call to live, for less than one salary.",
    "visual": "Morning shop, happy owner, Gena beside",
    "camera": "Medium wide shot, slow push-in.",
@@ -206,7 +206,7 @@
   {
    "id": "s14",
    "type": "veo",
-   "duration": 8,
+   "duration": 5.367,
    "narration": "And our guarantee: not live in thirty days? You don't pay for the build.",
    "visual": "Gena holds up a glowing shield",
    "camera": "Low angle medium shot, static.",
@@ -222,7 +222,7 @@
   {
    "id": "s15",
    "type": "veo",
-   "duration": 8,
+   "duration": 3.811,
    "narration": "Plug the holes first. Then fill the bucket.",
    "visual": "Camera rises over the town at dawn",
    "camera": "Aerial wide shot, slow rise and tilt down.",
@@ -238,7 +238,7 @@
   {
    "id": "s16",
    "type": "veo",
-   "duration": 8,
+   "duration": 3.039,
    "narration": "So, what is the leak costing you?",
    "visual": "Gena reaches toward the viewer",
    "camera": "Close-up, slow push-in.",
@@ -254,7 +254,7 @@
   {
    "id": "s17",
    "type": "graphic",
-   "duration": 5,
+   "duration": 11.337,
    "narration": "Book your free thirty-minute Leak Audit. Call plus one, two eight nine, seven zero zero, three three nine four, or visit genovation dot A I.",
    "visual": "End card: Leak Audit, phone, email, address, website",
    "clip": "graphics/genovation-ai-robots/s17.mp4",
