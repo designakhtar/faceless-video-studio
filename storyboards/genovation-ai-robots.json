@@ -1,0 +1,33 @@
+{
+ "slug": "genovation-ai-robots",
+ "title": "",
+ "fps": 30,
+ "width": 1920,
+ "height": 1080,
+ "voiceover": "audio/genovation-ai-robots/voiceover.wav",
+ "captions": "audio/genovation-ai-robots/captions.srt",
+ "music": "audio/genovation-ai-robots/music.wav",
+ "music_volume": 0.2,
+ "sfx": [],
+ "caption_font": "Hind Siliguri",
+ "caption_size": 20,
+ "credits_per_shot": 10,
+ "shots": [
+  {
+   "id": "s01",
+   "type": "veo",
+   "duration": 8,
+   "narration": "",
+   "visual": "",
+   "camera": "",
+   "hero": true,
+   "action": "",
+   "setting": "",
+   "ambient": "",
+   "veo_prompt": "",
+   "clip": "shots/genovation-ai-robots/s01.mp4",
+   "status": "pending",
+   "credits_used": 0
+  }
+ ]
+}
