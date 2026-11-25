@@ -1,45 +1,47 @@
-**Status:** DRAFT — waiting for user OK (2026-11-25)
+**Status:** DRAFT v2 — rewritten from the website screenshot, waiting for user OK (2026-11-25)
 
-# Genovation AI — "The Workforce That Never Sleeps"
+# Genovation AI — "Your Business Is Leaking Money. We Plug It."
 
-**Brief**
-- Topic: Promo video for Genovation AI (https://www.genovation.ai/) and its generative AI services
-- Audience: business owners, marketers, creators and teams who want AI to do real work
-- Characters: realistic human-like humanoid robots (natural face and skin, visible joint seams,
-  soft blue light in the eyes). Cinematic and realistic, NOT cartoon.
-- Hero robot: "Gena", a female-presenting humanoid robot who leads a team of AI robots
-- Style: cinematic 3D, glass-and-light futuristic studio, smooth camera moves, light-streak transitions
-- Language: English voiceover + English captions
-- Length: ~260 words · ~2:00 · 16:9
-
-> ⚠️ **NEEDS CONFIRMATION:** the website could not be opened from here (blocked network), so the
-> **services list (shots 5–10), the tagline and the call to action are placeholders**. Please send the real
-> services / tagline / CTA (or a screenshot of the site) and I will swap them in. No prices, stats or
-> customer claims have been added.
+**Brief (from the genovation.ai screenshot)**
+- Company: Genovation AI — AI systems for small and mid-sized businesses
+- Promise: find what missed calls, unanswered leads and unchased quotes cost you, then build the AI
+  that stops them, working in 30 days, for less than one salary
+- Guarantee: "Not live in 30 days? You don't pay for the build."
+- Services: AI Agents & Automation · AI Software & Websites · Get Found – AI Marketing · Video & UGC Content
+- Flagship: Gen AI Operating System — five agents in one dashboard: Reception, Sales, Operations,
+  Marketing, Finance. One login, one bill, shared memory.
+- Process: Week 1 We Learn Your Business · Week 2 We Build It · Week 3 We Connect & Test · Week 4 We Go Live
+- CTA: Book your free Leak Audit (30 minutes, no obligation) · +1 289-700-3394 · genovation.ai
+- Characters: the five agents shown as realistic human-like humanoid robots (natural faces, fine joint
+  seams, soft blue eye-light). Cinematic, NOT cartoon. Lead robot: "Gena", the Reception agent.
+- Style: cinematic 3D, dark navy night tones with blue light (matches the site), light-streak transitions
+- Language: English voiceover + captions · ~270 words · ~2:00 · 16:9
 
 ---
 
 | # | Time | Type | Visual | Voiceover (English) |
 |---|------|------|--------|---------------------|
-| s01 | 00:00 | veo | Dark office at night. A tired human worker surrounded by piles of papers and blinking screens rubs their eyes. Clock ticks past 2 AM. | Too much work. Too little time. And the deadline is always tomorrow. |
-| s02 | 00:06 | veo | Camera pushes into a screen; a blue light-streak transition explodes outward into a bright futuristic studio. | What if you had a team that never gets tired, never sleeps, and starts working the moment you ask? |
-| s03 | 00:13 | veo | In a glowing glass studio, the humanoid robot Gena opens her eyes, blue light flickering on. She turns toward the camera with a calm, human smile. | Meet the new workforce, powered by Genovation AI. |
-| s04 | 00:18 | graphic | Title card: Genovation AI logo · "Generative AI that works for you" (tagline placeholder). | |
-| s05 | 00:23 | veo | Gena walks down a corridor of glass workstations; other human-like robots look up and begin working, holographic screens lighting up one by one. | Every robot here is trained for one job, and every job starts with a single idea from you. |
-| s06 | 00:31 | veo | A robot writer types in the air; glowing words, paragraphs and blog posts form and fly into a holographic document. | Need words? Our AI writes blogs, ads, emails and captions in seconds, in your brand's voice. |
-| s07 | 00:39 | veo | A robot artist sweeps its hand; a blank canvas fills with a photorealistic product image, then morphs into posters and social posts. | Need visuals? Describe it, and it becomes stunning images, product shots and designs. |
-| s08 | 00:47 | veo | A robot director frames a scene with its fingers; a hologram film strip unrolls and plays a cinematic video clip. | Need video? From a simple script to a cinematic AI video — no camera, no studio, no crew. |
-| s09 | 00:55 | veo | A robot with a glowing sound wave at its throat speaks; voice waves ripple across the room in different colors and languages. | Need a voice? Natural AI voiceovers in many languages, ready for your ads and videos. |
-| s10 | 01:02 | veo | A robot assistant greets customers on many floating chat windows at once, answering with a friendly nod. | And for your customers, smart AI assistants that answer, help and support, around the clock. |
-| s11 | 01:10 | graphic | Checklist card: ✓ Text · ✓ Images · ✓ Video · ✓ Voice · ✓ AI Assistants (placeholder — to match real services). | |
-| s12 | 01:16 | veo | Fast light-streak montage: all robots working together, data streams connecting them into one glowing network around Gena. | One platform. One team. Working together, so your ideas move from thought to result faster than ever. |
-| s13 | 01:24 | veo | Back to the human from the opening, now in daylight, relaxed, watching finished work appear on their screen. Gena stands beside them, hand on shoulder. | You stay in control. You bring the vision. The AI does the heavy lifting. |
-| s14 | 01:31 | veo | The human and Gena shake hands; camera rises up to reveal a whole city skyline of glowing offices. | This is not about replacing people. It is about giving every person a team of superpowers. |
-| s15 | 01:39 | veo | Gena looks straight into the camera, eyes glowing softly, a hologram of the Genovation logo forming in her palm. | Faster work. Smarter ideas. Endless creativity. That is the power of generation. |
-| s16 | 01:47 | veo | Gena offers her hand toward the viewer; the hologram expands into a glowing doorway of light. | Your AI workforce is ready. Are you? |
-| s17 | 01:52 | graphic | End card: Genovation AI logo · "Start creating today" (CTA placeholder) · www.genovation.ai | Visit genovation dot A I and start creating today. |
+| s01 | 00:00 | veo | A small-town shop at night, lights off. Inside, a desk phone rings and rings in the dark. Nobody answers. | It's eleven at night. A customer is calling your business. And nobody picks up. |
+| s02 | 00:07 | veo | Glowing dollar coins slip through cracks in a wooden bucket and drip away into the dark street. | Missed calls. Leads nobody rang back. Quotes nobody chased. Your business is leaking money. |
+| s03 | 00:14 | graphic | Example card: 8 missed calls a week × 1 in 4 would buy × $800 = $83,200 a year (labelled "Example"). | Just eight missed calls a week can add up to over eighty thousand dollars a year. |
+| s04 | 00:21 | veo | Blue light-streak transition. In a dark glass studio, the humanoid robot Gena opens her eyes; soft blue light flickers on. She looks up with a calm, human smile. | Genovation AI finds exactly where the leaks are, and then we plug them. |
+| s05 | 00:28 | graphic | Title card: Genovation AI · "Your Business Is Leaking Money. We Plug It." | |
+| s06 | 00:32 | veo | The same dark shop phone rings; Gena answers through a glowing headset, nodding warmly, a calendar slot lights up in a hologram. | Our AI agents answer your phone at eleven P M, qualify the caller, book them, and remind them, before you even wake up. |
+| s07 | 00:40 | veo | Gena walks along a row of four more humanoid robots at glass desks; each looks up and starts work as she passes. | Meet your new team. Reception. Sales. Operations. Marketing. Finance. Five AI agents, working together. |
+| s08 | 00:48 | veo | All five robots' screens merge into one large glowing holographic dashboard floating in the middle of the room. | All inside one dashboard. One login, one bill, and shared memory, so nothing ever gets repeated back to your customer. |
+| s09 | 00:56 | veo | A robot builder shapes a glowing website and app screens in the air with its hands; the screens lock into place. | We build custom software and websites that are yours forever. No per-seat fees, ever. |
+| s10 | 01:03 | veo | A robot marketer watches a phone screen where a customer asks an AI chatbot for "the best company in town"; the shop's name glows as the answer. | When a customer asks ChatGPT for the best company in town, we make sure it says your name. |
+| s11 | 01:11 | veo | A robot director frames a scene with its fingers; a holographic film strip unrolls into a polished video ad. | And video content that sells for you before you get on the call. You never have to be on camera. |
+| s12 | 01:19 | graphic | Timeline card: Week 1 We Learn Your Business · Week 2 We Build It · Week 3 We Connect & Test · Week 4 We Go Live. | Week one, we learn your business. Week two, we build it. Week three, we connect and test. Week four, you go live. |
+| s13 | 01:28 | veo | The shop from the opening, now in morning light, busy; the owner smiles at a phone full of booked appointments while Gena stands beside them. | Thirty days from the first call to live, for less than one salary. |
+| s14 | 01:34 | veo | Gena holds up a glowing shield emblem; light pulses outward. | And our guarantee: not live in thirty days? You don't pay for the build. |
+| s15 | 01:41 | veo | The camera rises from the shop to the whole small town at dawn, many windows glowing blue as phones get answered. | Plug the holes first. Then fill the bucket. |
+| s16 | 01:46 | veo | Gena looks straight into the camera and offers her hand toward the viewer. | So, what is the leak costing you? |
+| s17 | 01:50 | graphic | End card: Book your free Leak Audit · 30 minutes, no obligation · +1 289-700-3394 · genovation.ai | Book your free thirty-minute Leak Audit. Call plus one, two eight nine, seven zero zero, three three nine four, or visit genovation dot A I. |
 
-**Total:** 17 shots (14 Veo + 3 free graphic cards) · ~2:00
+**Total:** 17 shots (13 Veo + 4 free graphic cards) · ~2:00
 
-**Spoken vs on-screen**
-- Spoken: "genovation dot A I" · On screen: www.genovation.ai
+**Spoken vs on-screen (confirm)**
+- Phone spoken: "plus one, two eight nine, seven zero zero, three three nine four" · on screen: +1 289-700-3394
+- Website spoken: "genovation dot A I" · on screen: genovation.ai
+- $83,200 is the website's own example (8 calls/week, 1 in 4 buy, $800 customer) — shown as "Example"
